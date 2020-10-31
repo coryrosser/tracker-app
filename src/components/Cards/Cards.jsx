@@ -21,7 +21,7 @@ const Cards = ({data: {confirmed, recovered, deaths, lastUpdate}}) => {
             <Typography variant='body2'>Number of active of active cases of Covid-19</Typography>
           </CardContent>
         </Grid>
-        <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infected)}>
+        <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>Recovered</Typography>
             <Typography variant='h5'>
@@ -31,7 +31,7 @@ const Cards = ({data: {confirmed, recovered, deaths, lastUpdate}}) => {
             <Typography variant='body2'>Number of recoveries from Covid-19</Typography>
           </CardContent>
         </Grid>
-        <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infected)}>
+        <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>Deaths</Typography>
             <Typography variant='h5'>
